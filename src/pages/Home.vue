@@ -2,7 +2,9 @@
   <div>
     home
     <div>
-      <router-link to="/users">Go to users</router-link>
+      <router-link to="/users">
+        Go to users
+      </router-link>
     </div>
   </div>
 </template>
@@ -11,7 +13,7 @@
 import {defineComponent} from 'vue'
 // import { RouterLink } from 'vue-router'
 export default defineComponent({
-  name: 'homePage',
+  name: 'HomePage',
   setup() {
     return {}
   }

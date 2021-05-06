@@ -6,7 +6,7 @@ module.exports = {
     public: { url: '/' },
   },
   alias: {
-    'componsnts': './src/components',
+    'components': './src/components',
     '@app': './src',
     '~': './src',
     '~/public': './public',
