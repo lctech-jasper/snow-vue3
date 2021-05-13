@@ -2,11 +2,9 @@ import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router'
 import HomePage from '@pages/Home.vue'
 import NotFoundPage from '@pages/errors/404.vue'
 
-const UsersPage = () => import('@pages/users/index.vue')
-
 const routes: RouteRecordRaw[] = [
   { path: '/', component: HomePage },
-  { path: '/users', component: UsersPage },
+  { path: '/users', component: () => import('@pages/users/index.vue') },
   { path: '/:pathMatch(.*)*', component: NotFoundPage }
 ]
 

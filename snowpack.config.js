@@ -13,6 +13,9 @@ module.exports = {
     '@pages': './src/pages'
   },
   plugins: [
+    // @snowpack/plugin-webpack use for esbuild not yet production-ready
+    // https://www.snowpack.dev/guides/optimize-and-bundle#option-1%3A-built-in-optimizations
+    // ["@snowpack/plugin-webpack"],
     '@snowpack/plugin-postcss',
     '@snowpack/plugin-sass',
     '@snowpack/plugin-vue',
@@ -25,10 +28,19 @@ module.exports = {
   ],
   optimize: {
     /* Example: Bundle your final build: */
-    // "bundle": true,
+    manifest: true,
+    // bundle: true,
+    // minify: true,
+    // target: 'es2020',
+    // sourcemap: false,
+    // splitting: true,
+    // treeshake: true,
   },
   packageOptions: {
     /* ... */
+    rollup: {
+      plugins: []
+    }
   },
   devOptions: {
     /* ... */

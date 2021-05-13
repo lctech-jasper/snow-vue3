@@ -21,6 +21,9 @@
       ],
       "@pages/*": ["./src/pages/*"]
     },
+    "types": [
+      "@types/jest"
+    ],
     /* noEmit - Snowpack builds (emits) files, not tsc. */
     "noEmit": true,
     /* Additional Options */

@@ -10,6 +10,9 @@ import {defineComponent} from 'vue';
 import cccc from 'components/mycom.vue'
 
 export default defineComponent({  
-  components: { cccc }
+  components: { cccc },
+  mounted() {
+    console.log('mounted')
+  },
 })
 </script>
