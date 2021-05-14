@@ -1,6 +1,7 @@
+import './bootstrap'
 import {createApp} from 'vue'
-import Routers from '~/router';
-import Store from '~/store';
+import Routers from '~/router'
+import Store from '~/store'
 import App from '~/App.vue'
 
 const app = createApp(App)

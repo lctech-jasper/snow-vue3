@@ -1,5 +1,6 @@
 <template>
   <div class="App">
+    <wrap-ele />
     <router-view />
   </div>
 </template>
@@ -10,6 +11,6 @@ import {defineComponent} from 'vue'
 export default defineComponent({
   setup() {
     return {}
-  },
+  }
 })
 </script>

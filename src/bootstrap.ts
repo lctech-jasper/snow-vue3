@@ -1,0 +1,4 @@
+import '@lctech-jasper/wrap'
+
+(() => ({}))()
+
