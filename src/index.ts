@@ -1,14 +1,15 @@
 import './bootstrap'
 import {createApp} from 'vue'
 import Routers from '~/router'
-import Store from '~/store'
 import App from '~/App.vue'
 
 const app = createApp(App)
 
-const RegdModule = [Routers, Store]
+const RegdModule = [Routers]
 
-RegdModule.map(module => app.use(module))
+for (const module of RegdModule) {
+  app.use(module)
+}
 
 app.mount('#app')
 

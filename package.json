@@ -10,10 +10,10 @@
   },
   "dependencies": {
     "@canarise/snowpack-eslint-plugin": "^0.2.0",
-    "@lctech-jasper/wrap": "^0.0.6",
+    "@lctech-jasper/wrap": "^0.0.19",
+    "mitt": "^2.1.0",
     "vue": "^3.0.11",
-    "vue-router": "^4.0.6",
-    "vuex": "^4.0.0"
+    "vue-router": "^4.0.6"
   },
   "devDependencies": {
     "@babel/plugin-syntax-jsx": "^7.12.13",

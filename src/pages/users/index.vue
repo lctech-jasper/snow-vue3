@@ -1,6 +1,12 @@
 <template>
   <div>
     users
+    <wrap-ele>
+      <div class="aaaa">
+        webcompoent slot
+      </div>
+      <cccc />
+    </wrap-ele>
     <cccc />
   </div>
 </template>
@@ -16,3 +22,9 @@ export default defineComponent({
   },
 })
 </script>
+
+<style>
+  .aaaa {
+    background-color: green;
+  }
+</style>
